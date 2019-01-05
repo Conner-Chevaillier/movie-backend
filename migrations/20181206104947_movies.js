@@ -1,4 +1,4 @@
-exports.up = function(knex, Promise) {
+exports.up = function (knex, Promise) {
   return knex.schema.createTable("movies", movie => {
     movie.increments("id");
     movie.string("titles");
@@ -8,6 +8,6 @@ exports.up = function(knex, Promise) {
     movie.string("url")
   });
 };
-exports.down = function(knex, Promise) {
+exports.down = function (knex, Promise) {
   return knex.schema.dropTableIfExists("movies");
 };

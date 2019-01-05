@@ -2,20 +2,30 @@
   "name": "movie-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "main": "app.js",
   "dependencies": {
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "express": "^4.16.4",
+    "heroku": "^7.19.4",
     "knex": "^0.15.2",
     "morgan": "^1.9.1",
+    "nodemon": "^1.18.7",
     "pg": "^7.7.1"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Conner-Chevaillier/movie-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Conner-Chevaillier/movie-backend/issues"
+  },
+  "homepage": "https://github.com/Conner-Chevaillier/movie-backend#readme"
 }
