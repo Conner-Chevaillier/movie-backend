@@ -7,14 +7,14 @@ exports.seed = function (knex, Promise) {
       return knex("movies").insert([
         {
           title: 'BladeRunner',
-          directors: 'Ridley Scott',
+          director: 'Ridley Scott',
           year: 1984,
           my_rating: 5,
           poster_url: 'https://www.imdb.com/title/tt0083658/mediaviewer/rm3676975360'
         },
         {
           title: 'BladeRunner 2049',
-          directors: 'Ridley Scott',
+          director: 'Ridley Scott',
           year: 2017,
           my_rating: 5,
           poster_url: 'https://www.imdb.com/title/tt0083658/mediaviewer/rm3676975360'
@@ -23,39 +23,36 @@ exports.seed = function (knex, Promise) {
           title: 'Creed II',
           director: 'Steven Caple Jr.',
           year: 2018,
-          rating: 2,
-          url: 'https://www.out.com/sites/out.com/files/2018/06/19/creed_ii-_poster_0.jpg'
+          my_rating: 2,
+          poster_url: 'https://www.out.com/sites/out.com/files/2018/06/19/creed_ii-_poster_0.jpg'
         },
         {
           title: 'Transcendence',
-          directors: 'Wally Pfister',
+          director: 'Wally Pfister',
           year: 1984,
           my_rating: 5,
           poster_url: 'https://www.scifinow.co.uk/news/transcendence-new-johnny-depp-poster-2/'
         },
         {
-          id: 1,
-          titles: "Schizoplis",
-          directors: "Steven Soderbergh",
+          title: "Schizoplis",
+          director: "Steven Soderbergh",
           year: "1976",
-          rating: "4",
-          poster: ""
+          my_rating: "4",
+          poster_url: ""
         },
         {
-          id: 2,
-          titles: "Nashville",
-          directors: "Robert",
+          title: "Nashville",
+          director: "Robert",
           year: "1976",
-          rating: "5",
-          poster: ""
+          my_rating: "5",
+          poster_url: ""
         },
         {
-          id: 3,
-          titles: "Idiocracy",
-          directors: "Mike Judge",
+          title: "Idiocracy",
+          director: "Mike Judge",
           year: "2006",
-          rating: "5",
-          poster: ""
+          my_rating: "5",
+          poster_url: ""
         }
       ]);
     });
